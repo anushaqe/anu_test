@@ -47,5 +47,7 @@ test.describe('test to switch and navigate to different pages from facebook foot
 
     //closing the final facebook page
     await closePage(1);
+
+    //test
   });
 });

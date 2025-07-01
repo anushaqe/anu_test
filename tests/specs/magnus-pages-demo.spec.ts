@@ -1,23 +1,24 @@
-import { goBack } from 'utils/action-utils';
-import { closePage, switchPage, switchToDefaultPage } from 'utils/page-utils';
+//import { goBack } from 'utils/action-utils';
+//import { closePage, switchPage, switchToDefaultPage } from 'utils/page-utils';
 import { test } from 'setup/page-setup';
-import {
-  clickFacebookInstagramFooterLink,
-  clickFacebookMetaQuestFooterLink,
-  clickFacebookPrivacyPolicyFooterLink,
-  navigatetoFacebookHomePage,
-  verifyFacebookPageURL,
-  verifyInstagaramPageURL,
-  verifyMetaQuestpageURL,
-  verifyPrivacyPolicyPageURL,
-} from '../pages/preferred-pom/facebook-page';
+import { navigatetoMagnusHomePage, verifyMagnusPageURL } from '../pages/preferred-pom/magnus-page';
+// import {
+//   clickFacebookInstagramFooterLink,
+//   clickFacebookMetaQuestFooterLink,
+//   clickFacebookPrivacyPolicyFooterLink,
+//   navigatetoFacebookHomePage,
+//   verifyFacebookPageURL,
+//   verifyInstagaramPageURL,
+//   verifyMetaQuestpageURL,
+//   verifyPrivacyPolicyPageURL,
+// } from '../pages/preferred-pom/magnus-page';
 
 test.describe('test to switch and navigate to different pages from facebook footer links', () => {
   test('Switch pages demo from facebook footer links', async () => {
-    await navigatetoFacebookHomePage();
-    await verifyFacebookPageURL();
+    await navigatetoMagnusHomePage();
+    await verifyMagnusPageURL();
     //clicking on instagram link in footer which opens a new tab
-    await clickFacebookInstagramFooterLink();
+    /* await clickFacebookInstagramFooterLink();
     //navigating to Instagram page
     await switchPage(2);
     //verifying the instagram page
@@ -46,6 +47,6 @@ test.describe('test to switch and navigate to different pages from facebook foot
     await closePage(2);
 
     //closing the final facebook page
-    await closePage(1);
+    await closePage(1);*/
   });
 });

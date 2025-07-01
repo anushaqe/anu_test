@@ -1,7 +1,7 @@
 import { Locator, Page, expect } from '@playwright/test';
-import { failureLoginCredentials, successLoginCredentials } from '../../testdata/sauce-demo-test-data';
+import { failureLoginCredentials, successLoginCredentials } from '../../testdata/magnus-test-data';
 
-export class SauceDemoLoginPage {
+export class magnusLoginPage {
   readonly page: Page;
   readonly userName: Locator;
   readonly password: Locator;
@@ -16,8 +16,8 @@ export class SauceDemoLoginPage {
     this.errorMessage = page.locator(`//*[contains(@class,'error-message')]`);
   }
 
-  async navigateToSauceDemoLoginPage() {
-    await this.page.goto('https://www.saucedemo.com/');
+  async navigateToMagnusLoginPage() {
+    await this.page.goto('https://magnus.jalatechnologies.com/');
   }
 
   async logInSuccessfully() {

@@ -1,9 +1,9 @@
 export const successLoginCredentials = {
-  username: 'standard_user',
-  password: 'secret_sauce',
+  username: 'training@jalaacademy.com',
+  password: 'jobprogram',
 };
 
 export const failureLoginCredentials = {
-  username: 'standard_user',
+  username: 'training@jalaacademy.com',
   password: '123',
 };

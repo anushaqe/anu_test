@@ -1,5 +1,5 @@
 import { click, clickAndNavigate, fill, gotoURL } from 'utils/action-utils';
-import { failureLoginCredentials, successLoginCredentials } from '../../testdata/magnus-test-data';
+import { failureLoginCredentials, successLoginCredentials } from '../../testdata/sauce-demo-test-data';
 import { expectElementToBeVisible } from 'utils/assert-utils';
 import { getLocator, getLocatorByPlaceholder, getLocatorByRole } from 'utils/locator-utils';
 
@@ -8,8 +8,8 @@ const password = () => getLocator(`#password`).or(getLocatorByPlaceholder('Passw
 const login = () => getLocatorByRole('button', { name: 'Login' });
 const errorMessage = `//*[contains(@class,'error-message')]`;
 
-export async function navigateToMagnusLoginPage() {
-  await gotoURL('https://magnus.jalatechnologies.com/');
+export async function navigateToSauceDemoLoginPage() {
+  await gotoURL('https://www.saucedemo.com/');
 }
 
 export async function logInSuccessfully() {

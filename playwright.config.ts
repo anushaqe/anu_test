@@ -24,6 +24,7 @@ export default defineConfig({
    * See https://playwright.dev/docs/api/class-testconfig#testconfig-testdir
    */
   testDir: './tests',
+  // testMatch: '**/*.spec.ts',
   /**
    * Determines whether to run tests within each spec file in parallel, in addition to running the spec files themselves in parallel.
    * See https://playwright.dev/docs/api/class-testconfig#testconfig-fullyparallel
